@@ -1,6 +1,87 @@
+:root {
+  font-family: "Inter", sans-serif;
+  --main-color: blue;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nav .logo {
+  justify-content: center;
+  order: 2;
+  width: 50%;
+}
+
+.nav .logo h2 {
+  text-align: center;
+}
+
+.nav .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  order: 3;
+}
+
+.nav .navbar a {
+  display: none
+}
+
+.nav .navbar button {
+  width: 100%;
+  border: none;
+}
+
+.nav .navbar button i {
+  font-size: 20px;
+}
+
+
+.nav .search {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  border: none;
+  border-radius: 10%;
+  order: 1;
+}
+
+.nav .search input {
+  width: 80%;
+  border: none;
+  padding: 2px;
+  display: none;
+}
+
+.nav .search input:focus {
+  border: none;
+  outline: none;
+}
+
+.nav .search button {
+  width: 100%;
+  border: none;
+}
+
+.nav .search button i {
+  font-size: 20px;
 }
